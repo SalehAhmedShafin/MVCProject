@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bachelorNeerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="admininfo">
+    <Key>
+      <PropertyRef Name="o_ID" />
+    </Key>
+    <Property Name="o_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="o_Name" Type="varchar" MaxLength="25" />
+    <Property Name="o_Number" Type="varchar" MaxLength="15" />
+    <Property Name="o_Email" Type="varchar" MaxLength="25" />
+    <Property Name="o_Adress" Type="varchar" MaxLength="200" />
+    <Property Name="o_NID" Type="varchar" MaxLength="25" />
+    <Property Name="o_Password" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Approvedproperty">
+    <Key>
+      <PropertyRef Name="ap_Id" />
+    </Key>
+    <Property Name="ap_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ap_Name" Type="varchar" MaxLength="30" />
+    <Property Name="ap_Email" Type="varchar" MaxLength="30" />
+    <Property Name="ap_Number" Type="varchar" MaxLength="30" />
+    <Property Name="ap_Type" Type="varchar" MaxLength="30" />
+    <Property Name="ap_Proaddress" Type="varchar" MaxLength="100" />
+    <Property Name="ap_Thana" Type="varchar" MaxLength="30" />
+    <Property Name="ap_Imfile" Type="varchar" MaxLength="100" />
+    <Property Name="ap_Rent" Type="float" />
+    <Property Name="ap_Bed" Type="int" />
+    <Property Name="ap_Bath" Type="int" />
+    <Property Name="ap_Kitchen" Type="int" />
+    <Property Name="ap_Belcony" Type="int" />
+    <Property Name="ap_Dining" Type="int" />
+  </EntityType>
+  <EntityType Name="PropertyDetails">
+    <Key>
+      <PropertyRef Name="up_ID" />
+    </Key>
+    <Property Name="up_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="up_Name" Type="varchar" MaxLength="25" />
+    <Property Name="up_Email" Type="varchar" MaxLength="50" />
+    <Property Name="up_Number" Type="varchar" MaxLength="25" />
+    <Property Name="up_Type" Type="varchar" MaxLength="25" />
+    <Property Name="up_Proaddress" Type="varchar" MaxLength="25" />
+    <Property Name="up_Thana" Type="varchar" MaxLength="25" />
+    <Property Name="up_Imfile" Type="varchar" MaxLength="25" />
+    <Property Name="up_Rent" Type="float" />
+    <Property Name="up_Bed" Type="int" />
+    <Property Name="up_Bath" Type="int" />
+    <Property Name="up_Kitchen" Type="int" />
+    <Property Name="up_Belcony" Type="int" />
+    <Property Name="up_Dining" Type="int" />
+  </EntityType>
+  <EntityType Name="userinfo">
+    <Key>
+      <PropertyRef Name="u_ID" />
+    </Key>
+    <Property Name="u_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="u_Name" Type="varchar" MaxLength="25" />
+    <Property Name="u_Number" Type="varchar" MaxLength="15" />
+    <Property Name="u_Email" Type="varchar" MaxLength="30" />
+    <Property Name="u_Adress" Type="varchar" MaxLength="200" />
+    <Property Name="u_NID" Type="varchar" MaxLength="25" />
+    <Property Name="u_Password" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityContainer Name="bachelorNeerModelStoreContainer">
+    <EntitySet Name="admininfo" EntityType="Self.admininfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Approvedproperty" EntityType="Self.Approvedproperty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertyDetails" EntityType="Self.PropertyDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="userinfo" EntityType="Self.userinfo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,201 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html lang="en">
+
+<head>
+
+    <link rel="icon" href="../Design/img/favicon.png" type="image">
+    <title>BachelorNeer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            <div class="logo me-auto">
+                <h1><a onclick="location.href='@Url.Action("Index","Home")'">Bachelor Neer</a></h1>
+            </div>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" onclick="location.href='@Url.Action("Index","Home")'">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Property</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+
+                            <li><a onclick="location.href='@Url.Action("PropertyIndex","Properties")'">PROPERTIES</a></li>
+                            <li><a onclick="location.href='@Url.Action("PropertyDetails","Properties")'">PROPERTIES DETAIL</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a onclick="location.href='@Url.Action("BlogIndex","Blog")'">BLOG</a></li>
+                            <li><a href="blog-single.html">BLOG DETAILS</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link scrollto" onclick="location.href='@Url.Action("Contact","Home")'">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <div class="header-social-links d-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container text-center text-md-left" data-aos="fade-up">
+            <h1>
+                Rent or Sell
+                Property Online
+            </h1>
+            <h2>
+                Looking to sell property online or are you in search of tenants?
+                Do it with ease with the largest real estate marketplace in
+                Bangladesh. Start your journey now!
+            </h2>
+            <a onclick="location.href='@Url.Action("AdvanceDetailsForm","AddProperty")'" class="btn-get-started scrollto">Get Started</a>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <section id="what-we-do" class="what-we-do">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>What You Can</h2>
+                    <p>Basically You can do different types of things like House rent, Search Apartment location etc. </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">House Rent</a></h4>
+                            <p> If you are not able to find a house that you can afford, then it might be better to rent.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4><a href="">Searching Apartment</a></h4>
+                            <p>You can also search for apartments on the internet and find out what other people think of their experiences with the property.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-tachometer"></i></div>
+                            <h4><a href="">User and Owner Activity</a></h4>
+                            <p>User and Owner Activity is the process of setting up an account and logging in to it.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>BachelorNeer</h3>
+                        <p>
+                            180/2 Niketon <br>
+                            Gulshan, 1208<br>
+                            Dhaka <br><br>
+                            <strong>Phone:</strong> +880 1730957466<br>
+                            <strong>Email:</strong> info@neer.com<br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">House Rent</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Guide</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Create account</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Matching House</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Join Us Today</h4>
+                        <p>Please Email us for any kinds of query</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Send Mail">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+

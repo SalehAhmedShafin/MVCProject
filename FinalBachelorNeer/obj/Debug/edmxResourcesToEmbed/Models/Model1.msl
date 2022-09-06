@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bachelorNeerModelStoreContainer" CdmEntityContainer="bachelorNeerEntities2">
+    <EntitySetMapping Name="admininfoes">
+      <EntityTypeMapping TypeName="bachelorNeerModel.admininfo">
+        <MappingFragment StoreEntitySet="admininfo">
+          <ScalarProperty Name="o_ID" ColumnName="o_ID" />
+          <ScalarProperty Name="o_Name" ColumnName="o_Name" />
+          <ScalarProperty Name="o_Number" ColumnName="o_Number" />
+          <ScalarProperty Name="o_Email" ColumnName="o_Email" />
+          <ScalarProperty Name="o_Adress" ColumnName="o_Adress" />
+          <ScalarProperty Name="o_NID" ColumnName="o_NID" />
+          <ScalarProperty Name="o_Password" ColumnName="o_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Approvedproperties">
+      <EntityTypeMapping TypeName="bachelorNeerModel.Approvedproperty">
+        <MappingFragment StoreEntitySet="Approvedproperty">
+          <ScalarProperty Name="ap_Id" ColumnName="ap_Id" />
+          <ScalarProperty Name="ap_Name" ColumnName="ap_Name" />
+          <ScalarProperty Name="ap_Email" ColumnName="ap_Email" />
+          <ScalarProperty Name="ap_Number" ColumnName="ap_Number" />
+          <ScalarProperty Name="ap_Type" ColumnName="ap_Type" />
+          <ScalarProperty Name="ap_Proaddress" ColumnName="ap_Proaddress" />
+          <ScalarProperty Name="ap_Thana" ColumnName="ap_Thana" />
+          <ScalarProperty Name="ap_Imfile" ColumnName="ap_Imfile" />
+          <ScalarProperty Name="ap_Rent" ColumnName="ap_Rent" />
+          <ScalarProperty Name="ap_Bed" ColumnName="ap_Bed" />
+          <ScalarProperty Name="ap_Bath" ColumnName="ap_Bath" />
+          <ScalarProperty Name="ap_Kitchen" ColumnName="ap_Kitchen" />
+          <ScalarProperty Name="ap_Belcony" ColumnName="ap_Belcony" />
+          <ScalarProperty Name="ap_Dining" ColumnName="ap_Dining" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PropertyDetails">
+      <EntityTypeMapping TypeName="bachelorNeerModel.PropertyDetail">
+        <MappingFragment StoreEntitySet="PropertyDetails">
+          <ScalarProperty Name="up_ID" ColumnName="up_ID" />
+          <ScalarProperty Name="up_Name" ColumnName="up_Name" />
+          <ScalarProperty Name="up_Email" ColumnName="up_Email" />
+          <ScalarProperty Name="up_Number" ColumnName="up_Number" />
+          <ScalarProperty Name="up_Type" ColumnName="up_Type" />
+          <ScalarProperty Name="up_Proaddress" ColumnName="up_Proaddress" />
+          <ScalarProperty Name="up_Thana" ColumnName="up_Thana" />
+          <ScalarProperty Name="up_Imfile" ColumnName="up_Imfile" />
+          <ScalarProperty Name="up_Rent" ColumnName="up_Rent" />
+          <ScalarProperty Name="up_Bed" ColumnName="up_Bed" />
+          <ScalarProperty Name="up_Bath" ColumnName="up_Bath" />
+          <ScalarProperty Name="up_Kitchen" ColumnName="up_Kitchen" />
+          <ScalarProperty Name="up_Belcony" ColumnName="up_Belcony" />
+          <ScalarProperty Name="up_Dining" ColumnName="up_Dining" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userinfoes">
+      <EntityTypeMapping TypeName="bachelorNeerModel.userinfo">
+        <MappingFragment StoreEntitySet="userinfo">
+          <ScalarProperty Name="u_ID" ColumnName="u_ID" />
+          <ScalarProperty Name="u_Name" ColumnName="u_Name" />
+          <ScalarProperty Name="u_Number" ColumnName="u_Number" />
+          <ScalarProperty Name="u_Email" ColumnName="u_Email" />
+          <ScalarProperty Name="u_Adress" ColumnName="u_Adress" />
+          <ScalarProperty Name="u_NID" ColumnName="u_NID" />
+          <ScalarProperty Name="u_Password" ColumnName="u_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,157 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+
+    <link rel="icon" href="../Design/img/favicon.png" type="image">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../Helper/vendors/styles/core.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="../Helper/vendors/styles/icon-font.min.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="../Helper/src/plugins/jquery-steps/jquery.steps.css" />
+    <link rel="stylesheet" type="text/css" href="../Helper/vendors/styles/style.css" />
+
+</head>
+
+<body class="login-page">
+    <div class="login-header box-shadow">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a onclick="location.href='@Url.Action("BeforeLogin","Home")'">
+                <div class="navbar-brand aa-logo">
+                    <h4>Bachelor Neer</h4>
+                </div>
+                </a>
+                <div class="login-menu">
+                    <ul>
+                        <li><h4>New Account</h4></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="register-page-wrap d-flex align-items-center flex-wrap justify-content-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <img src="../Helper/vendors/images/register-page-img.png" alt="" />
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="register-box bg-white box-shadow border-radius-10">
+                        <div class="wizard-content">
+
+
+
+                            <form class="tab-wizard2 wizard-circle wizard" action="/Signup/AdvanceSignup" method="post">
+                                <h5>Basic Information</h5>
+                                <section>
+                                    <div class="form-wrap max-width-600 mx-auto">
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">Full Name*</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" required="required" aria-required="true" value="" name="u_Name" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">Mobile Number*</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder=" @ViewBag.ErrorMessagesss" required="required" aria-required="true" value="" name="u_Number" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">Email Address*</label>
+                                            <div class="col-sm-8">
+                                                <input type="email" class="form-control" required="required" aria-required="true" value="@ViewBag.ErrorMessages" name="u_Email" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">NID*</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" placeholder="@ViewBag.ErrorMessagess" required="required" aria-required="true" value="" name="u_NID" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">Password*</label>
+                                            <div class="col-sm-8">
+                                                <input type="password" class="form-control" required="required" aria-required="true" value="" name="u_Password" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">Confirm Password*</label>
+                                            <div class="col-sm-8">
+                                                <input type="password" class="form-control" required="required" aria-required="true" value="" name="u_ConPassword" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                                <h4>@ViewBag.Valid</h4>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit"
+                                                id="success-modal-btn"
+                                                name="Submit"
+                                                hidden
+                                                data-toggle="modal"
+                                                data-target="#success-modal"
+                                                data-backdrop="static">
+                                            Launch modal
+                                        </button>
+
+                                       
+
+                                    </div>
+                                </section>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- success Popup html Start -->
+    <!-- success Popup html End -->
+    <!-- welcome modal end -->
+    <!-- js -->
+    <script src="../Helper/vendors/scripts/core.js"></script>
+    <script src="../Helper/vendors/scripts/script.min.js"></script>
+    <script src="../Helper/vendors/scripts/process.js"></script>
+    <script src="../Helper/vendors/scripts/layout-settings.js"></script>
+    <script src="../Helper/src/plugins/jquery-steps/jquery.steps.js"></script>
+    <script src="../Helper/vendors/scripts/steps-setting.js"></script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXZMQSS"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
+
+

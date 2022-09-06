@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8" />
+    <link rel="icon" href="../Design/img/favicon.png" type="image">
+    <title>BachelorNeer</title>
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../Helper/vendors/styles/core.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="../Helper/vendors/styles/icon-font.min.css" />
+    <link rel="stylesheet" type="text/css" href="../Helper/vendors/styles/style.css" />
+
+   
+</head>
+<body>
+
+    <div class="login-header box-shadow">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a onclick="location.href='@Url.Action("Index","Home")'">
+                <div class="navbar-brand aa-logo">
+                    <h4>Bachelor Neer</h4>
+                </div>
+            </a>
+
+            <div class="login-menu">
+                <ul>
+                    <li><a onclick="location.href='@Url.Action("AdvanceDetailsForm","AddProperty")'">ADD PROPERTY</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="error-page d-flex align-items-center flex-wrap justify-content-center pd-20">
+        <div class="pd-10">
+            <div class="error-page-wrap text-center">
+                <h2>Congratulation</h2>
+                <h3>Your Request is being pending</h3>
+                <p>Please Check your profile, After accept your request please provide some additional information</p>
+                <div class="pt-20 mx-auto max-width-200">
+                    <a onclick="location.href='@Url.Action("AdvanceDetailsForm","AddProperty")'" class="btn btn-primary btn-block btn-lg">Add Another Property</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js -->
+    <script src="../Helper/vendors/scripts/core.js"></script>
+    <script src="../Helper/vendors/scripts/script.min.js"></script>
+    <script src="../Helper/vendors/scripts/process.js"></script>
+    <script src="../Helper/vendors/scripts/layout-settings.js"></script>
+
+</body>
+</html>
+
+
